@@ -2,9 +2,7 @@
 #include "entity.h"
 #include "player.h"
 
-s32 ModHealth(s32 deltaHealth)
-
-{
+s32 ModHealth(s32 deltaHealth) {
     s32 newHealth;
 
     newHealth = gStats.health + deltaHealth;

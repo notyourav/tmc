@@ -2,9 +2,7 @@
 
 extern void SetTileType(u32, u32, u32);
 
-void sub_0807B8A8(u32 param_1)
-
-{
+void sub_0807B8A8(u32 param_1) {
     SetTileType(636, param_1 + -65, 1);
     SetTileType(643, param_1 + -65, 2);
     SetTileType(637, param_1 + -64, 1);

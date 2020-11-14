@@ -558,94 +558,45 @@ void sub_0808747C(u32 arg0, u32 arg1) {
 }
 
 //clang-format off
-void (*const GreatFairy_Main[])(Entity*) = {
-    GreatFairy_CallBehavior, 
-    GreatFairy_WingsCallBehavior,
-    GreatFairy_WakeCallBehavior,
-    GreatFairy_MiniCallBehavior,
-    GreatFairy_MiniAffineCallBehavior,     
-    GreatFairy_DropletCallBehavior, 
-    GreatFairy_RippleCallBehavior, 
-    GreatFairy_BigRippleCallBehavior,
-    GreatFairy_EnergyCallBehavior, 
-    sub_08087114, 
-    sub_08087294 
-};
+void (*const GreatFairy_Main[])(Entity*) = { GreatFairy_CallBehavior,
+                                             GreatFairy_WingsCallBehavior,
+                                             GreatFairy_WakeCallBehavior,
+                                             GreatFairy_MiniCallBehavior,
+                                             GreatFairy_MiniAffineCallBehavior,
+                                             GreatFairy_DropletCallBehavior,
+                                             GreatFairy_RippleCallBehavior,
+                                             GreatFairy_BigRippleCallBehavior,
+                                             GreatFairy_EnergyCallBehavior,
+                                             sub_08087114,
+                                             sub_08087294 };
 
 void (*const GreatFairy_Behaviors[])(Entity*) = {
-    GreatFairy_Init,
-    GreatFairy_DormantUpdate,
-    GreatFairy_CreateBigRipple,
-    GreatFairy_SpawningUpdate,
-    GreatFairy_MiniUpdate,
-    GreatFairy_FinalUpdate
+    GreatFairy_Init,           GreatFairy_DormantUpdate, GreatFairy_CreateBigRipple,
+    GreatFairy_SpawningUpdate, GreatFairy_MiniUpdate,    GreatFairy_FinalUpdate
 };
 
-const s16 GreatFairy_RippleOffsets[10] = {
-       0,   0,
-     -32,  -8,
-      16,  20,
-      24, -12,
-     -16,  24
-};
+const s16 GreatFairy_RippleOffsets[10] = { 0, 0, -32, -8, 16, 20, 24, -12, -16, 24 };
 
+void (*const GreatFairy_WingsBehaviors[])(Entity*) = { GreatFairy_WingsInit, GreatFairy_WingsUpdate, nullsub_116 };
 
-void (*const GreatFairy_WingsBehaviors[])(Entity*) =  {
-    GreatFairy_WingsInit,
-    GreatFairy_WingsUpdate,
-    nullsub_116
-};
+void (*const GreatFairy_WakeBehaviors[])(Entity*) = { GreatFairy_WakeInit, GreatFairy_WakeUpdate };
 
-void (*const GreatFairy_WakeBehaviors[])(Entity*) = {
-    GreatFairy_WakeInit,
-    GreatFairy_WakeUpdate
-};
+void (*const GreatFairy_MiniBehaviors[])(Entity*) = { GreatFairy_MiniInit, GreatFairy_MiniRisingUpdate,
+                                                      GreatFairy_MiniRemoveMe };
 
-void (*const GreatFairy_MiniBehaviors[])(Entity*) = {
-    GreatFairy_MiniInit,
-    GreatFairy_MiniRisingUpdate,
-    GreatFairy_MiniRemoveMe
-};
+void (*const GreatFairy_MiniAffineBehaviors[])(Entity*) = { GreatFairy_MiniAffineInit, GreatFairy_MiniAffineInit2,
+                                                            GreatFairy_MiniAffineUpdate, DeleteEntity };
 
-void (*const GreatFairy_MiniAffineBehaviors[])(Entity*) = {
-    GreatFairy_MiniAffineInit,
-    GreatFairy_MiniAffineInit2,
-    GreatFairy_MiniAffineUpdate,
-    DeleteEntity
-};
+void (*const GreatFairy_DropletBehaviors[])(Entity*) = { GreatFairy_DropletInit, GreatFairy_DropletUpdate };
 
-void (*const GreatFairy_DropletBehaviors[])(Entity*) = {
-    GreatFairy_DropletInit,
-    GreatFairy_DropletUpdate
-};
+void (*const GreatFairy_RippleBehaviors[])(Entity*) = { GreatFairy_RippleInit, GreatFairy_RippleUpdate };
 
-void (*const GreatFairy_RippleBehaviors[])(Entity*) = {
-    GreatFairy_RippleInit,
-    GreatFairy_RippleUpdate
-};
+void (*const GreatFairy_BigRippleBehaviors[])(Entity*) = { GreatFairy_BigRippleInit, GreatFairy_BigRippleUpdate };
 
-void (*const GreatFairy_BigRippleBehaviors[])(Entity*) = {
-    GreatFairy_BigRippleInit,
-    GreatFairy_BigRippleUpdate
-};
+void (*const GreatFairy_EnergyBehaviors[])(Entity*) = { GreatFairy_EnergyInit, GreatFairy_EnergyUpdate };
+void (*const GreatFairy_Form1Behaviors[])(Entity*) = { sub_08087150, nullsub_516, sub_080871A8, sub_080871D0 };
 
-void (*const GreatFairy_EnergyBehaviors[])(Entity*) = {
-    GreatFairy_EnergyInit,
-    GreatFairy_EnergyUpdate
-};
-void (*const GreatFairy_Form1Behaviors[])(Entity*) = {
-    sub_08087150,
-    nullsub_516,
-    sub_080871A8,
-    sub_080871D0
-};
-
-void (*const GreatFairy_Form2Behaviors[])(Entity*) = {
-    sub_08087150,
-    sub_080871F8,
-    sub_08087240,
-    sub_08087264,
-    sub_0808727C
-};
+void (*const GreatFairy_Form2Behaviors[])(Entity*) = { sub_08087150, sub_080871F8, sub_08087240, sub_08087264,
+                                                       sub_0808727C };
 
 //clang-format on

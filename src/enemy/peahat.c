@@ -357,7 +357,7 @@ void sub_080205F8(Entity* this) {
     this->actionDelay = 60;
 }
 
-void sub_08020604(Entity *this){
+void sub_08020604(Entity* this) {
     if (!sub_08049FA0(this) && (Random() & 3)) {
         this->direction = sub_08049EE4(this);
     } else {
@@ -365,8 +365,6 @@ void sub_08020604(Entity *this){
         this->direction &= 0x1f;
     }
 }
-
-
 
 // clang-format off
 void (*const gPeahatFunctions[])(Entity*) = {
@@ -415,4 +413,3 @@ const s8 gUnk_080CA5D4[] = {
 };
 */
 // clang-format on
-

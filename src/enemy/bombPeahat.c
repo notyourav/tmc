@@ -42,44 +42,39 @@ void sub_0802A84C(Entity* this) {
     }
 }
 
-void sub_0802A8AC(Entity *this) {
+void sub_0802A8AC(Entity* this) {
     this->field_0x80.HALF.HI = 0;
     if (this->entityType.form < 2) {
         InitializeAnimation(this, 0);
     }
 }
 
-void sub_0802A8C8(Entity* this)
-{
-  gUnk_080CD140[this->previousActionFlag](this);
+void sub_0802A8C8(Entity* this) {
+    gUnk_080CD140[this->previousActionFlag](this);
 }
 
-void sub_0802A8E0(Entity *this)
-{
-  this->previousActionFlag = 1;
-  this->field_0x1d = 0x3c;
+void sub_0802A8E0(Entity* this) {
+    this->previousActionFlag = 1;
+    this->field_0x1d = 0x3c;
 }
 
-void sub_0802A8EC(Entity *this)
-{
+void sub_0802A8EC(Entity* this) {
     sub_0806F4E8(this);
 }
 
-void sub_0802A8F4(Entity *this)
-{
+void sub_0802A8F4(Entity* this) {
     sub_0806F3E4(this);
 }
 
-void sub_0802A8FC(Entity *this)
-{
-  if ((gPlayerState.field_0x1c & 0xf) == 0) {
-    this->currentHealth = gPlayerState.field_0x1c & 0xf;
-  }
+void sub_0802A8FC(Entity* this) {
+    if ((gPlayerState.field_0x1c & 0xf) == 0) {
+        this->currentHealth = gPlayerState.field_0x1c & 0xf;
+    }
 }
 
-void nullsub_143(Entity* this){}
+void nullsub_143(Entity* this) {
+}
 
-void sub_0802A91C(Entity *this)
-{
-  this->currentHealth = 0;
+void sub_0802A91C(Entity* this) {
+    this->currentHealth = 0;
 }

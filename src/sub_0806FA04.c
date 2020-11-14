@@ -2,9 +2,7 @@
 
 extern s32 __divsi3(s32, s32);
 
-s16 sub_0806FA04(s16 param_1, s16 param_2)
-
-{
+s16 sub_0806FA04(s16 param_1, s16 param_2) {
     s16 sVar1;
     s32 iVar2;
 

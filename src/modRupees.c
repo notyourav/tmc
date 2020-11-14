@@ -3,9 +3,7 @@
 
 extern u16 gWalletSizes[4];
 
-void ModRupees(s32 rupeeDelta)
-
-{
+void ModRupees(s32 rupeeDelta) {
     s32 newRupeeCount;
     Stats* s = &gStats;
 
